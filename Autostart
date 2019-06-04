@@ -1,0 +1,17 @@
+Steps to autostart a program while booting up the pi:
+
+In order to have a command or program run when the Pi boots, you can add commands to the rc.local file. This is especially useful if you want to power up your Pi in headless mode (that is without a connected monitor), and have it run a program without configuration or a manual start.
+
+Step 1: Open the rc.local file using terminal in root access by using the following command.
+			sudo nano /etc/rc.local
+
+Step 2: Write the following command with absolute address of the file.(Here I am using a python file)
+			sudo python /home/pi/Desktop/sample.py &
+The above line must be written above 'exit 0' in the rc.local file.
+The file 'sample.py' is located on the desktop.
+
+Step 3: Press Ctrl+X followed by Y and then 'Enter' key to save the changes and close the nano editor.
+
+Step 4: Reboot the pi using the command : 'sudo reboot'
+
+NOTE: Test the program to be executed at the boot because if it is not correct, then it will hinder the boot process

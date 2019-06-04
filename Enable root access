@@ -1,0 +1,10 @@
+To enable root access on your pi, go through the following instructions:
+
+Step 1: Open the terminal and type : 'sudo passwd root'
+Step 2: Enter the password according to your choice, retype the password and press 'Enter'.
+
+To login into root terminal :
+Step 1: Type 'sudo login'
+Step 2: Type 'root' as user and the password which you have set for 'root'.
+
+NOTE: In case you forget the password, reset it by following the upper steps of root access.
